@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use((req, res, next) => {
   // api access by origin
-  res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000"),
+  res.setHeader("Access-Control-Allow-Origin", "*"),
     res.setHeader("Access-Control-Allow-Headers", "*"),
     next();
 });
